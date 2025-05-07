@@ -4,8 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a92f4a5f7275082e8b98c607c219437",
+    "content-hash": "90168bb23fe61f01f8561b94c0187afd",
     "packages": [
+        {
+            "name": "acme/tunisia-governorates-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "bundles/TunisiaGovernoratesBundle",
+                "reference": "0ae6e85de85b0cc857569638dfb21803cdf2fb7d"
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/asset": "^6.0",
+                "symfony/form": "^6.0",
+                "symfony/framework-bundle": "^6.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Acme\\TunisiaGovernoratesBundle\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Symfony bundle providing an autocomplete form field for Tunisian governorates",
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "composer/semver",
             "version": "3.4.3",
@@ -9839,7 +9867,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "acme/tunisia-governorates-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

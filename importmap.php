@@ -25,4 +25,7 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
+    'governorate-autocomplete' => [
+        'path' => './bundles/TunisiaGovernoratesBundle/src/Resources/public/js/governorate-autocomplete.js',
+    ],
 ];

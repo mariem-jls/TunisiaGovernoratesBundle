@@ -43,8 +43,15 @@
         "symfony/web-link": "6.4.*",
         "symfony/yaml": "6.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "acme/tunisia-governorates-bundle": "dev-main"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "bundles/TunisiaGovernoratesBundle"
+        }
+    ],
     "config": {
         "allow-plugins": {
             "php-http/discovery": true,

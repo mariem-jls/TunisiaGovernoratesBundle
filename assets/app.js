@@ -6,5 +6,9 @@ import './bootstrap.js';
  * which should already be in your base.html.twig.
  */
 import './styles/app.css';
+import { startStimulusApp } from '@symfony/stimulus-bundle';
+import GovernorateAutocompleteController from 'governorate-autocomplete';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+const app = startStimulusApp();
+
+app.register('governorate-autocomplete', GovernorateAutocompleteController);
